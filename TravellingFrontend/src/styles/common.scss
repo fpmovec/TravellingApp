@@ -1,0 +1,37 @@
+.button-white {
+  background-color: $white;
+  width: auto;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: $dark-white;
+  }
+}
+
+.button-orange {
+  background-color: $orange-main;
+  color: $white;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: $dark-orange-main;
+  }
+}
+
+button {
+  box-sizing: border-box;
+  padding: 5px 15px;
+
+  border-radius: 15px !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: $white !important;
+  transition: text-decoration 1s;
+}
+
+a:hover {
+  text-decoration: underline $orange-main 2px !important;
+  cursor: pointer;
+}
