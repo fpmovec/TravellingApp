@@ -1,6 +1,6 @@
 import "../styles/components/header.scss";
 import logo from "../assets/Home/logo.png";
-import "../styles/home-page.scss";
+import "../styles/pages/home-page.scss";
 
 const Header = () => {
   return (

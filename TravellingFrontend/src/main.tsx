@@ -1,14 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
-import 'rsuite/dist/rsuite.min.css';
-import { CustomProvider } from 'rsuite';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import "./styles/shared.scss"
+import DatePickerWrapper from "./Components/DatePickerWrapper.tsx";
+import Router from "./Components/Router.tsx";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <CustomProvider>
-        <App />
-    </CustomProvider>
-  </React.StrictMode>,
-)
+    <DatePickerWrapper>
+      <Router />
+    </DatePickerWrapper>
+  </React.StrictMode>
+);

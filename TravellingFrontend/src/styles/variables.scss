@@ -3,3 +3,18 @@ $dark-orange-main:  #d17503;
 
 $white: #FFFFFF;
 $dark-white: #e9e7e7;
+
+// screen breakpoints
+$breakpoint-xs: 360px;
+$breakpoint-sm: 600px;
+$breakpoint-md: 905px;
+$breakpoint-lg: 1240px;
+$breakpoint-xl: 1440px;
+$breakpoint-xxl: 1920px;
+
+$orientation-landscape: "landscape";
+$orientation-portrait: "portrait";
+
+$grid-columns-xs: 4;
+$grid-columns-sm: 8;
+$grid-columns: 12;
