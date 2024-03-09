@@ -1,3 +1,7 @@
+h1 {
+  font-size: 56px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -40,4 +44,10 @@ a {
 a:hover {
   text-decoration: underline $orange-main 2px !important;
   cursor: pointer;
+}
+
+@include media-breakpoint-down(sm) {
+  h1 {
+    font-size: 30px;
+  }
 }

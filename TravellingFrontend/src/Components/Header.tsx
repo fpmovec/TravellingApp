@@ -30,9 +30,12 @@ const Header = () => {
           <li className="header-item">
             <a>Contact Us</a>
           </li>
+          <div id="mobile" className="buttons-block">
+            <button className="button-white">Login</button>
+            <button className="button-orange">Sign Up</button>
+          </div>
         </ul>
-
-        <div className="buttons-block">
+        <div id="desktop" className="buttons-block">
           <button className="button-white">Login</button>
           <button className="button-orange">Sign Up</button>
         </div>

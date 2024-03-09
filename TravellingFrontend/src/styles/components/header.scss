@@ -7,7 +7,6 @@
   .container {
     height: 90px;
     width: 100vw;
-    //background-color: rgba(255, 255, 255, 0.2);
 
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
@@ -16,7 +15,7 @@
   }
 
   .header {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: $transparent-gray;
   }
 
   .logo {
@@ -55,6 +54,10 @@
       color: $white;
     }
   }
+
+  #mobile {
+    display: none;
+  }
 }
 
 @include media-breakpoint-down(sm) {
@@ -62,8 +65,24 @@
     display: none;
   }
 
+  .nav-content {
+    display: flex;
+    flex-direction: column;
+  }
+
   .buttons-block {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 10px;
+    width: 50%;
+    transform: scale(1.5);
+  }
+
+  .buttons-block::before {
+    content: "";
+    width: 100%;
+    border-bottom: 0.5px solid $orange-main;
   }
 
   .nav-container {
@@ -145,12 +164,13 @@
   .header .header-items {
     padding-top: 120px;
     box-shadow: inset 0 0 200px rgba(255, 255, 255, 0.5);
-    background-color: $orange-main;
+    background-color: white;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
+    gap: 40px;
     margin-left: -40px;
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
@@ -161,6 +181,10 @@
     margin-bottom: 1.2 rem;
     font-size: 1.5rem;
     font-weight: 50%;
+
+    & > a {
+      color: black !important;
+    }
   }
 
   .nav-container input[type="checkbox"]:checked ~ .header-items {
@@ -177,5 +201,9 @@
 
   .nav-container input[type="checkbox"]:checked ~ .burger-lines .line3 {
     transform: rotate(-45deg);
+  }
+
+  #desktop {
+    display: none;
   }
 }

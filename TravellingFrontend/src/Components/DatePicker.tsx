@@ -2,7 +2,7 @@ import type {} from "@mui/x-date-pickers/themeAugmentation";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import '../styles/components/date-picker.scss'
+import '../styles/components/mui-pickers.scss'
 
 interface Props {
   handleValue: (v: Date) => void;

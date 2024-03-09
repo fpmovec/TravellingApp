@@ -1,0 +1,8 @@
+.MuiPickersDay-root.Mui-selected,
+.MuiMultiSectionDigitalClockSection-item.Mui-selected {
+    background-color: $orange-main !important;
+}
+
+.MuiMultiSectionDigitalClockSection-item.Mui-selected {
+    border-radius: $border-radius;
+}
