@@ -18,6 +18,7 @@ const SelectorBox = ({ label, value, source, handleValue }: Props) => {
           label={label}
           onChange={(e) => handleValue(e.target.value as string)}
           value={value}
+          MenuProps={{ disableScrollLock: true }}
         >
           {source.map((item, index) => {
             return (
