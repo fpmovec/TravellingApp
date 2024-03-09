@@ -5,10 +5,11 @@ import HomePage from "../Pages/Home/Home";
 const Router = () => {
   return (
     <BrowserRouter>
+    <Header />
       <div className="main">
-        <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="*"/>
         </Routes>
       </div>
     </BrowserRouter>

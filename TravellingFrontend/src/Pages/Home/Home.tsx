@@ -10,8 +10,11 @@ const HomePage = () => {
   return (
     <>
       <div className="travelling-selector">
-        <Calendar handleValue={setDate} />
+        <div className="travelling-selector-block">
+          <Calendar handleValue={setDate} />
+        </div>
       </div>
+      <div style={{height: 1100}}>Hello</div>
     </>
   );
 };

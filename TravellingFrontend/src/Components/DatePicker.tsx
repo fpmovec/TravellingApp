@@ -18,6 +18,7 @@ const Calendar = ({ handleValue }: Props) => {
         slotProps={{
           actionBar: { actions: ["today"] }
         }}
+        closeOnSelect={true}
       />
     </LocalizationProvider>
   );
