@@ -1,0 +1,78 @@
+.card-container {
+  width: 230px;
+  height: 400px;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: $border-radius;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 400px;
+    border-right: 2px solid $dark-white;
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+  }
+}
+
+.card-container:last-child::after {
+  border: none;
+}
+
+.card-container:hover {
+  background-color: $dark-white;
+}
+
+.card-container:not(:last-child) {
+  border-right: none;
+}
+
+.image {
+  width: 200px;
+  height: auto;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  font-weight: 300;
+  text-align: center;
+}
+
+span {
+  color: $orange-main;
+  font-weight: bold;
+
+  &.card-brief-panel-item {
+    font-weight: 300;
+  }
+}
+
+.card-brief-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@include media-breakpoint-between(sm, md) {
+  .card-container:nth-child(2n)::after {
+    border: none;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+    .card-container::after {
+      border: none;
+    }
+  }

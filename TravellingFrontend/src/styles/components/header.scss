@@ -14,6 +14,10 @@
     gap: 30px;
   }
 
+  .mobile-nav-title {
+    display: none;
+  }
+
   .header {
     background-color: $transparent-gray;
   }
@@ -175,6 +179,15 @@
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     text-align: center;
+  }
+
+  .mobile-nav-title {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    color: $white;
+    position: absolute;
+    top: 15px;
+    left: 50vw;
   }
 
   .header .header-items li {

@@ -6,3 +6,13 @@
 .MuiMultiSectionDigitalClockSection-item.Mui-selected {
     border-radius: $border-radius;
 }
+
+.MuiFormControl-fullWidth {
+    max-width: 200px !important;
+}
+
+@include media-breakpoint-down(sm) {
+    .MuiFormControl-fullWidth {
+        max-width: 260px !important;
+    }
+}

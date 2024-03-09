@@ -64,8 +64,52 @@
   }
 }
 
+.cards-container {
+  box-sizing: border-box;
+  padding: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  gap: 10px;
+
+  align-self: center;
+}
+
+@include media-breakpoint-up(md) {
+  .travelling-selector-block {
+    width: 70vw;
+  }
+}
+
+@include media-breakpoint-between(sm, sm) {
+  .cards-container {
+    grid-template-columns: repeat(2, 240px);
+    grid-template-rows: repeat(2, 400px);
+    gap: 10px;
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .travelling-selector {
-    height: 50vh;
+    height: 70vh;
+  }
+
+  .travelling-selector-content {
+    flex-direction: column;
+  }
+
+  .search {
+    width: 100%;
+  }
+  .main-title,
+  .subtitle {
+    display: none;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .cards-container {
+    grid-template-columns: repeat(1, 240px);
+    grid-template-rows: repeat(4, 400px);
   }
 }

@@ -6,12 +6,14 @@ const Header = () => {
   return (
     <div className="header">
       <div className="container nav-container">
-        <input className="nav-checkbox" type="checkbox" />
-        <div className="burger-lines">
-          <span className="line line1"></span>
-          <span className="line line2"></span>
-          <span className="line line3"></span>
-        </div>
+          <input className="nav-checkbox" type="checkbox" />
+          <div className="burger-lines">
+            <span className="line line1"></span>
+            <span className="line line2"></span>
+            <span className="line line3"></span>
+          </div>
+          <h1 className="mobile-nav-title">Tuskany</h1>
+
         <div className="logo">
           <a href="#">
             <img alt="logo" style={{ width: 60, height: 65 }} src={logo}></img>

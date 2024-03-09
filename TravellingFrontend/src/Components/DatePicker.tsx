@@ -12,7 +12,7 @@ const Calendar = ({ handleValue }: Props) => {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DatePicker
-        label="Select date..."
+        label="Departure date"
         disablePast={true}
         onChange={v => handleValue(v as Date)}
         slotProps={{

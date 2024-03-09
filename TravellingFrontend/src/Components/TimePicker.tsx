@@ -10,7 +10,7 @@ const Time = () => {
   return (
     <>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <TimePicker openTo="hours" />
+        <TimePicker label="Departure time" openTo="hours" />
       </LocalizationProvider>
     </>
   );

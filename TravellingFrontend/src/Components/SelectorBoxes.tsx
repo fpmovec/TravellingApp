@@ -1,4 +1,5 @@
 import { Select, FormControl, MenuItem, InputLabel } from "@mui/material";
+import "../styles/components/mui-pickers.scss";
 
 interface Props {
   label: string;
@@ -10,10 +11,9 @@ interface Props {
 const SelectorBox = ({ label, value, source, handleValue }: Props) => {
   return (
     <>
-      <FormControl sx={{ m: 1, minWidth: 120 }}>
+      <FormControl fullWidth={true}>
         <InputLabel id={label}>{label}</InputLabel>
         <Select
-          autoWidth
           labelId={label}
           label={label}
           onChange={(e) => handleValue(e.target.value as string)}
