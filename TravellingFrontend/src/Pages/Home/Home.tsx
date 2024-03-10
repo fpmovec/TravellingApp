@@ -43,12 +43,13 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="cards-container">
-        <CardItem />
-        <CardItem />
-        <CardItem />
-        <CardItem />
-      </div>
+        <h2 className="cards-subtitle">Explore Our The Most Popular Destinantions</h2>
+        <div className="cards-container">
+          <CardItem />
+          <CardItem />
+          <CardItem />
+          <CardItem />
+        </div>
     </>
   );
 };
