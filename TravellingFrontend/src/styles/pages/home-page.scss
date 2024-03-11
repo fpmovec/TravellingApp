@@ -81,6 +81,26 @@
   align-self: center;
 }
 
+.about-section {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  margin-top: 100px;
+
+  @include make-col(8);
+  @include make-col-offset(2);
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+
+  & div:first-child {
+    font-weight: 300;
+  }
+}
+
 @include media-breakpoint-up(md) {
   .travelling-selector-block {
     width: 70vw;

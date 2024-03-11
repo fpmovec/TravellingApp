@@ -12,3 +12,7 @@ body {
   padding: 0 !important;
   overflow-x: hidden;
 }
+
+.blocked-body {
+  overflow-y: hidden !important;
+}
