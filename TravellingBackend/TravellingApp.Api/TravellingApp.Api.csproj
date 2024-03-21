@@ -8,8 +8,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0"/>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TravellingApp.Application\TravellingApp.Application.csproj" />
+      <ProjectReference Include="..\TravellingApp.Infrastructure\TravellingApp.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
