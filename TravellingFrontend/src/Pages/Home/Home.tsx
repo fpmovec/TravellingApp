@@ -55,7 +55,7 @@ const HomePage = () => {
         <CardItem />
       </div>
       <div className="about-section">
-        <div>
+        <div className="about-image">
           <img src={about} alt="about-logo"></img>
         </div>
         <div>
@@ -73,13 +73,37 @@ const HomePage = () => {
                 available for you!
               </h3>
             </div>
-            <div>
-              <div className="about-item"></div>
-              <div className="about-item"></div>
-              <div className="about-item"></div>
-              <div className="about-item"></div>
+            <br />
+            <div className="about-numbers">
+              <div className="about-item">
+                <span>20+</span>
+                <br />
+                Years Experience
+              </div>
+              <div className="about-item">
+                <span>100+</span>
+                <br />
+                Happy customers
+              </div>
+              <div className="about-item">
+                <span>15+</span>
+                <br />
+                Choice of Services
+              </div>
+              <div className="about-item">
+                <span>10+</span>
+                <br />
+                Prefessional Guides
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="contact-block">
+        <div className="contact-area">
+          <div>Get Special Offers for <br/> Organizations</div>
+          <div style={{width: '80%'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+          <div><button style={{transform: 'scale(1.2)'}} className="button-orange">Contact Us</button></div>
         </div>
       </div>
     </>

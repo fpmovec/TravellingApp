@@ -1,6 +1,6 @@
 ﻿namespace TravellingApp.Domain.Models;
 
-public class BaseModel<TId>
+public class BaseDbModel<TId>
 {
     public TId Id { get; set; }
 }
