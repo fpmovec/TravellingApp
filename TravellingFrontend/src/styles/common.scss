@@ -34,6 +34,7 @@ button {
 
   border-radius: 15px !important;
   border: none;
+  font-weight: 700;
 }
 
 a {
@@ -45,6 +46,40 @@ a {
 a:hover {
   text-decoration: underline $orange-main 2px !important;
   cursor: pointer;
+}
+
+.price {
+  color: $orange-main;
+  font-size: 35px;
+  position: relative;
+  margin-left: 15px;
+}
+
+.price::before {
+  content: "€";
+  color: gray;
+  position: absolute;
+  font-size: 15px;
+
+  top: 5px;
+  left: -10px;
+}
+
+.daily-price {
+  position: relative;
+}
+
+.daily-price::after {
+  content: '/day';
+  color: gray;
+  position: absolute;
+  font-size: 15px;
+  bottom: 10px;
+  margin-left: 3px;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 @include media-breakpoint-down(sm) {

@@ -3,6 +3,10 @@
   z-index: 10;
 }
 
+.header-items li a {
+  font-weight: 700;
+}
+
 @include media-breakpoint-up(md) {
   .container {
     height: 90px;

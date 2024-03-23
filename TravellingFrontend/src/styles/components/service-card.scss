@@ -1,0 +1,29 @@
+.service-card {
+  //@include make-col(2);
+  height: 400px;
+  width: 300px;
+  border-radius: $border-radius;
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+
+  border: 0.5px solid gray;
+}
+
+.service-description {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 3fr 1fr;
+}
+
+.service-description-items {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.service-description-marks {
+  color: $orange-main;
+  margin-right: 5px;
+}

@@ -7,6 +7,7 @@ import SelectorBox from "../../Components/SelectorBoxes";
 import "../../styles/components/card.scss";
 import CardItem from "../../Components/Card";
 import about from "../../assets/Home/about.png";
+import ServiceCard from "../../Components/ServiceCard";
 
 const HomePage = () => {
   const [date, setDate] = useState<Date>(new Date());
@@ -101,11 +102,12 @@ const HomePage = () => {
       </div>
       <div className="contact-block">
         <div className="contact-area">
-          <div>Get Special Offers for <br/> Organizations</div>
+          <div style={{fontWeight: 700}}>Get Special Offers for <br/> Organizations</div>
           <div style={{width: '80%'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
           <div><button style={{transform: 'scale(1.2)'}} className="button-orange">Contact Us</button></div>
         </div>
       </div>
+      <ServiceCard />
     </>
   );
 };
